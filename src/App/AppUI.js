@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { CreateToDoButton } from './components/CreateToDoButton';
+import { Modal } from './components/Modal';
 import { TodoCounter } from './components/ToDoCounter';
 import { TodoForm } from './components/ToDoForm';
 import { TodoList } from './components/ToDoList';
@@ -13,17 +14,14 @@ export const AppUI = () => {
 		<React.Fragment>
 			<TodoCounter />
 			<TodoSearch />
-			<main>
-				<section>
-					<TodoList />
-				</section>
 
-				<CreateToDoButton />
+			<TodoList />
 
-				<dialog open={openModal}>
-					<TodoForm />
-				</dialog>
-			</main>
+			<CreateToDoButton />
+
+			<Modal isOpen={openModal}>
+				<TodoForm />
+			</Modal>
 		</React.Fragment>
 	);
 };

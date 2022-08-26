@@ -1,5 +1,6 @@
 import React from 'react';
 import { TodoContext } from '../../contexts/todoContexts';
+import './ToDoForm.css';
 
 export const TodoForm = () => {
 	const { addTodo, setOpenModal } = React.useContext(TodoContext);
@@ -31,15 +32,16 @@ export const TodoForm = () => {
 	};
 
 	return (
-		<form onSubmit={catchData} id="formTodo">
-			<label>
-				<span>Write your todo.</span>
-				<textarea name="text" placeholder="Clean the home"></textarea>
+		<form onSubmit={catchData} id="formTodo" className="formTodo">
+			<label className="labelText">
+				<textarea className="labelText_input" name="text" placeholder=" "></textarea>
+				<span className="labelText_text">Write your todo...</span>
+				<div className="labelText_line"></div>
 			</label>
-			<button onClick={cancelAdd} type="button">
+			<button className="btnCancel" onClick={cancelAdd} type="button">
 				Cancel
 			</button>
-			<input type="submit" value="add" />
+			<input className="btnAdd" type="submit" value="add" />
 		</form>
 	);
 };
