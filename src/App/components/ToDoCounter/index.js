@@ -8,7 +8,7 @@ export const TodoCounter = () => {
 	return (
 		<header className="header">
 			<h2 className="header_title">
-				You have {totalCompletedTodos} todo completed of {totalTodos} todo.
+				Has completado {totalCompletedTodos} tareas de {totalTodos} tareas por hacer.
 			</h2>
 		</header>
 	);

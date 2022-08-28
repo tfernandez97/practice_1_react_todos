@@ -9,14 +9,14 @@ export const TodoList = () => {
 	if (totalTodos === 0 && searchValue.length === 0) {
 		return (
 			<section className="sectionTodo">
-				<p className="textInfo">Create your first todo...</p>;
+				<p className="textInfo">Crea tu primera tarea...</p>;
 			</section>
 		);
 	}
 	if (searchedTodo.length === 0 && searchValue.length > 0) {
 		return (
 			<section className="sectionTodo">
-				<p className="textInfo">todo not found</p>
+				<p className="textInfo">Tarea no encontrada.</p>
 			</section>
 		);
 	}

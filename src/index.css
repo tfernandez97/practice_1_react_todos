@@ -29,3 +29,10 @@ html {
 .icon-search{
   width: 3rem;
 }
+.not-body-scroll{
+  overflow: hidden;
+}
+
+textarea {
+  resize: none;
+}

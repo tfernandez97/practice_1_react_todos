@@ -20,7 +20,7 @@ export const TodoSearch = () => {
 				</svg>
 			</span>
 			<input className="labelSearch_input" id="search" type="text" onChange={(event) => seachInTodoList(event)} placeholder=" " />
-			<span className="labelSearch_text">Search a todo...</span>
+			<span className="labelSearch_text">Buscar una tarea...</span>
 			<div className="labelSearch_line"></div>
 		</label>
 	);
