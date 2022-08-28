@@ -81,7 +81,7 @@
     cursor: pointer;
     font-size: 1.8rem;
     font-weight: 500;
-    background: #aa0c21;
+    background: #535353;
     color: #ffffff;
     transition: all 250ms linear;
     transform: scale(.95);
@@ -93,9 +93,11 @@
     cursor: pointer;
     font-size: 1.8rem;
     font-weight: 500;
-    background: #1031eb;
+    background: #000000;
     color: #ffffff;
     transition: all 250ms linear;
+    transform: scale(.95);
+
 }
 
 .btnCancel:hover,.btnAdd:hover{

@@ -35,13 +35,13 @@ export const TodoForm = () => {
 		<form onSubmit={catchData} id="formTodo" className="formTodo">
 			<label className="labelText">
 				<textarea className="labelText_input" name="text" placeholder=" "></textarea>
-				<span className="labelText_text">Write your todo...</span>
+				<span className="labelText_text">Escribe tu tarea aqui.</span>
 				<div className="labelText_line"></div>
 			</label>
 			<button className="btnCancel" onClick={cancelAdd} type="button">
-				Cancel
+				Cancelar
 			</button>
-			<input className="btnAdd" type="submit" value="add" />
+			<input className="btnAdd" type="submit" value="Añadir" />
 		</form>
 	);
 };
